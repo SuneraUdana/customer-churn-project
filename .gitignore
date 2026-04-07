@@ -1,0 +1,13 @@
+.env
+models/churn_model.pkl
+telco-customer-churn.zip
+models/churn_model.pkl
+telco-customer-churn.zip
+__pycache__/
+*.pyc
+*.zip
+models/churn_model.pkl
+telco-customer-churn.zip
+__pycache__/
+*.pyc
+*.zip
