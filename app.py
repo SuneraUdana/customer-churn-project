@@ -125,6 +125,7 @@ else:
 
             try:
                 result = run_pipeline(df_raw)
+                st.session_state["result"] = result
                 status.update(label="✅ Pipeline complete!", state="complete")
 
             except Exception as e:
@@ -141,9 +142,6 @@ else:
                     status.update(label="❌ Pipeline failed", state="error")
                     st.error(f"Pipeline error: {str(e)}")
                 st.stop()
-
-    # Store result
-    st.session_state["result"] = result
 
     # ── Show results ──────────────────────────────────────────────
     if "result" in st.session_state:
